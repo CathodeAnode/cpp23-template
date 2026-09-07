@@ -17,7 +17,16 @@ if(NOT 23 IN_LIST CMAKE_CXX_COMPILER_IMPORT_STD)
 endif()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 add_executable(EXECUTABLE_NAME src/main.cpp)
+
+target_sources(modders-dream
+    PRIVATE
+    FILE_SET modules TYPE CXX_MODULES
+    FILES
+    # Add modules here
+)
+
 set_target_properties(EXECUTABLE_NAME PROPERTIES
     CXX_STANDARD 23
     CXX_STANDARD_REQUIRED YES
