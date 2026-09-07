@@ -5,7 +5,7 @@
       "name": "clang",
       "displayName": "Clang + libc++ (also used by clangd)",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/clang",
+      "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_CXX_COMPILER": "clang++",
@@ -16,7 +16,7 @@
       "name": "gcc",
       "displayName": "GCC + libstdc++",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/gcc",
+      "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_CXX_COMPILER": "g++"
