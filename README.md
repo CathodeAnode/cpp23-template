@@ -20,3 +20,4 @@ cmake --build --preset clang
 ```
 
 To compile with GCC instead of Clang, replace `clang` with `gcc`. You need to clear the `build/` folder before switching compilers.
+However, clangd would only work if you compiled the project with `clang`.
